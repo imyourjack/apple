@@ -5,7 +5,6 @@ export default function Hello() {
     <div>
       <p>hello</p>
       <World />
-      <World />
     </div>
   )
 }
