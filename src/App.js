@@ -16,8 +16,6 @@ function App() {
       <a href={google.url}>{google.name}</a>
 
       <Hello />
-      <Hello />
-      <Hello />
       <Welcome />
 
     </div>
