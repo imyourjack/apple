@@ -1,26 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import Hello from './component/Hello';
+import Welcome from "./component/Welcome";
 
 function App() {
+  const name = "jason";
+  const google = {
+    name: "구글",
+    url: "https://google.com"
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          react project apple
-          test1
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 style={{color: "black", backgroundColor: "green"}}>
+        Hi, there {name}, <p>{1 + 5}</p>
+      </h1>
+      <a href={google.url}>{google.name}</a>
+
+      <Hello />
+      <Hello />
+      <Hello />
+      <Welcome />
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
