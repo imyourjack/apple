@@ -1,6 +1,8 @@
 import "./App.css"
 import Hello from './component/Hello';
 import Welcome from "./component/Welcome";
+import StateTest from "./component/StateTest";
+import PropsTesting from "./component/PropsTesting";
 
 function App() {
   const name = "jason";
@@ -17,7 +19,8 @@ function App() {
 
       <Hello />
       <Welcome />
-
+      <StateTest />
+      <PropsTesting age={24} />
     </div>
   )
 }
